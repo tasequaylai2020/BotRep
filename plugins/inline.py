@@ -32,7 +32,7 @@ from pyrogram import (
 buttons = [
     [
         InlineKeyboardButton('⚡️Make Own Bot', url='https://github.com/tasequaylai2020/BotRep'),
-        InlineKeyboardButton('🧩 Join Here', url='https://t.me/subin_works'),
+        InlineKeyboardButton('🧩 Join Here', url='https://t.me/phodam18'),
     ]
     ]
 def get_cmd(dur):
@@ -47,7 +47,7 @@ async def search(client, query):
         answers.append(
             InlineQueryResultArticle(
                 title="Deploy",
-                input_message_content=InputTextMessageContent(f"{Config.REPLY_MESSAGE}\n\n<b>Tham gia hệ thống group: @pholink để biết nhiều thứ hay ho nhé! Admin: @tnm0000</b>", disable_web_page_preview=True),
+                input_message_content=InputTextMessageContent(f"{Config.REPLY_MESSAGE}\n\n<b>Nhóm Zalo: XuyenDem.com/zalo </ br>Hướng dẫn mở khóa nếu bị chặn: t.me/pholink/10649</b>", disable_web_page_preview=True),
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
