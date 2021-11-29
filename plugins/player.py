@@ -505,5 +505,5 @@ async def not_chat(_, m: Message):
                 InlineKeyboardButton('🧩 Join Here', url='https://t.me/subin_works'),
             ]
             ]
-        await m.reply("<b>Nhóm Zalo: XuyenDem.com/zalo </ br>Hướng dẫn mở khóa nếu bị chặn: t.me/pholink/10649</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+        await m.reply("<b>Hướng dẫn mở khóa nhóm nếu không xem được nội dung: t.me/pholink/10649", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
 
