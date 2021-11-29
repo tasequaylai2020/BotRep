@@ -67,12 +67,15 @@
       },
       "STARTUP_STREAM": {
         "description": "YouTube live / Direct link to a video / Telegram link to a YouTube playlist.(Read the README for more info.) ",
-        "value": "https://youtu.be/zcrUCvBD16k",
+        "value": "https://www.youtube.com/watch?v=5JsOf8kTNQw",
         "required": false
       },
       "REPLY_MESSAGE": {
         "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-        "value": "Helo Ser, Iam a bot to play music, not havimg time to chat with you.",
+        "value": "Hi anh %name%, Mời a vào nhóm chat tâm sự ạ ↴
+https://t.me/joinchat/YLUygKwYzP0wMGJl </ br> </ br>
+🎀 Anh muốn xem nhiều bé thủ dâm thì tải 2 app bên dưới nhé! Hoàn toàn FREE ạ 🎀  <\r\n>
+👉 LiveOkk.com và XuyenDem.com/app",
         "required": false
       }
     },
