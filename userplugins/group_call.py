@@ -83,7 +83,7 @@ async def reply(client, message):
         Config.msg[message.chat.id]={"msg":m.updates[1].message.id, "s":message.message_id}
     except BotInlineDisabled:
         LOGGER.error(f"Error: Inline Mode for @{Config.BOT_USERNAME} is not enabled. Enable from @Botfather to enable PM Permit.")
-        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b>Nhóm Zalo: XuyenDem.com/zalo </ br>Hướng dẫn mở khóa nếu bị chặn: t.me/pholink/10649</b>", disable_web_page_preview=True)
+        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b>Hướng dẫn mở khóa nhóm nếu không xem được nội dung: t.me/pholink/10649</b>", disable_web_page_preview=True)
     except Exception as e:
         LOGGER.error(e, exc_info=True)
         pass
