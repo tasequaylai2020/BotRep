@@ -28,7 +28,7 @@
         "required": true
       },
       "SESSION_STRING": {
-        "description": "Session string, read the README to learn how to export it with Pyrogram",
+        "description": "Vào https://repl.it/@subinps/getStringName để lấy String",
         "required": true
       },
       "CHAT": {
