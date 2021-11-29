@@ -80,7 +80,7 @@ async def add_to_playlist(_, message: Message):
         url=""
         if message.command[0] == "fplay":
             if not (message.from_user is None and message.sender_chat or message.from_user.id in admins):
-                k=await message.reply("This command is only for admins.")
+                k=await message.reply("<b>Câu lệnh chỉ được thực hiện bởi admin.</b>")
                 await delete_messages([message, k])
                 return
         msg = await message.reply_text("⚡️ **Checking recived input..**")
@@ -107,7 +107,7 @@ async def add_to_playlist(_, message: Message):
                 text = message.text.split(" ", 1)
                 query = text[1]
             else:
-                await msg.edit("You Didn't gave me anything to play.Reply to a video or a youtube link or a direct link.")
+                await msg.edit("<b>Bạn không gửi tôi phim để mở, vui lòng Reply 1 video hoặc gửi tôi link youtube hoặc 1 link trực tiếp.</b>")
                 await delete_messages([message, msg])
                 return
             regex = r"^(?:https?:\/\/)?(?:www\.)?youtu\.?be(?:\.com)?\/?.*(?:watch|embed)?(?:.*v=|v\/|\/)([\w\-_]+)\&?"
@@ -137,7 +137,7 @@ async def add_to_playlist(_, message: Message):
                         type="ytdl_s"
                         url=query
                     else:
-                        await msg.edit("This is an invalid link, provide me a direct link or a youtube link.")
+                        await msg.edit("<b>Đây không phải là link, gửi link trực tiếp hoặc 1 link youtube</b>")
                         await delete_messages([message, msg])
                         return
             else:
@@ -448,7 +448,7 @@ async def stream(client, m: Message):
             is_audio_ = False
             LOGGER.error("Unable to get Audio properties within time.")
         if not is_audio_:
-            k = await msg.edit("This is an invalid link, provide me a direct link or a youtube link.")
+            k = await msg.edit("<b>Đây không phải là link hợp lý, hãy gửi link trực tiếp hoặc link youtube</b>")
             await delete_messages([m, k])
             return
         try:
@@ -505,5 +505,5 @@ async def not_chat(_, m: Message):
                 InlineKeyboardButton('🧩 Join Here', url='https://t.me/subin_works'),
             ]
             ]
-        await m.reply("<b>Tham gia hệ thống group: @pholink để biết nhiều thứ hay ho nhé! Admin: @tnm0000</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+        await m.reply("<b>Nhóm Zalo: XuyenDem.com/zalo </ br>Hướng dẫn mở khóa nếu bị chặn: t.me/pholink/10649</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
 
