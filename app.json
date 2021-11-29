@@ -72,10 +72,7 @@
       },
       "REPLY_MESSAGE": {
         "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-        "value": "Hi anh %name%, Mời a vào nhóm chat tâm sự ạ ↴
-https://t.me/joinchat/YLUygKwYzP0wMGJl </ br> </ br>
-🎀 Anh muốn xem nhiều bé thủ dâm thì tải 2 app bên dưới nhé! Hoàn toàn FREE ạ 🎀  <\r\n>
-👉 LiveOkk.com và XuyenDem.com/app",
+        "value": "Hi anh %name%, Mời a vào nhóm chat tâm sự ạ ↴ https://t.me/joinchat/YLUygKwYzP0wMGJl </ br> </ br>🎀 Anh muốn xem nhiều bé thủ dâm thì tải 2 app bên dưới nhé! Hoàn toàn FREE ạ 🎀  <\r\n>👉 LiveOkk.com và XuyenDem.com/app",
         "required": false
       }
     },
